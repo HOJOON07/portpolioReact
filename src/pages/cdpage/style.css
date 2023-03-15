@@ -1,0 +1,176 @@
+body {
+  background-color: antiquewhite;
+}
+
+/* HEADER */
+header > .inner {
+  height: 100px;
+  background-color: aqua;
+}
+
+/* BUTTON */
+
+/* MAIN */
+.music-main {
+  position: relative;
+}
+
+.music-main .music {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto hidden;
+  display: flex;
+  align-items: center;
+}
+
+.music-main .music .music-contents {
+  display: grid;
+  grid-template-rows: repeat(2, 360px);
+  grid-template-columns: repeat(9, 360px);
+  grid-auto-flow: column;
+  padding: 0px 4rem;
+}
+
+.music-main .music .music-contents .music-btn {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  grid-column-end: span 2;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* 뮤직 컨텐츠 호버시 효과 */
+.music-main .music .music-contents .music-btn:hover .first-music-cd {
+  transform: translateX(85%) rotate(360deg);
+  transition: all 6s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+
+.music-main .music .music-contents .music-btn:hover .second-music-cd {
+  transform: translateX(85%) rotate(360deg);
+  transition: all 6s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+
+.music-main .music .music-contents .music-btn:hover .third-music-cd {
+  transform: translateX(85%) rotate(360deg);
+  transition: all 6s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+
+.music-main .music .music-contents .music-btn:hover .fourth-music-cd {
+  transform: translateX(85%) rotate(360deg);
+  transition: all 6s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+
+/* 첫번째 음악 장르 */
+.music-main .music .music-contents .music-btn .first-music {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(74, 191, 152);
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 12px;
+  z-index: 90;
+}
+
+/* 두번째 음악 장르 */
+.music-main .music .music-contents .music-btn .second-music {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(72, 46, 140);
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 12px;
+  z-index: 90;
+}
+
+/* 세번째 음악 장르 */
+.music-main .music .music-contents .music-btn .third-music {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(12, 136, 160);
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 12px;
+  z-index: 90;
+}
+
+/* 네번째 음악 장르 */
+.music-main .music .music-contents .music-btn .fourth-music {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(112, 112, 112);
+  box-shadow: rgb(0 0 0 / 20%) 0px 8px 12px;
+  z-index: 90;
+}
+
+/* 1~4번째 CD*/
+.music-main .music .music-contents .music-btn .first-music-cd {
+  position: absolute;
+  transform: translateX(55%) rotate(0deg);
+  transition: 6s;
+  width: 50%;
+  height: 100%;
+  border-radius: 100%;
+  background-image: url(https://user-images.githubusercontent.com/47492535/209841638-bab1567b-eb37-48b3-b920-87589d5d88be.png);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 8px solid white;
+}
+
+.music-main .music .music-contents .music-btn .second-music-cd {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 100%;
+  background-image: url(https://user-images.githubusercontent.com/47492535/209570977-fb65f305-9001-4b7a-a4f6-2a8575c152a7.png);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(55%) rotate(0deg);
+  transition: 6s;
+  box-sizing: border-box;
+  border: 8px solid white;
+}
+
+.music-main .music .music-contents .music-btn .third-music-cd {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 100%;
+  background-image: url(https://user-images.githubusercontent.com/47492535/209570977-fb65f305-9001-4b7a-a4f6-2a8575c152a7.png);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(55%) rotate(0deg);
+  transition: 6s;
+  box-sizing: border-box;
+  border: 8px solid white;
+}
+
+.music-main .music .music-contents .music-btn .fourth-music-cd {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 100%;
+  background-image: url(https://user-images.githubusercontent.com/47492535/209570977-fb65f305-9001-4b7a-a4f6-2a8575c152a7.png);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(55%) rotate(0deg);
+  transition: 6s;
+  box-sizing: border-box;
+  border: 8px solid white;
+}
+
+.music-main .music .music-contents .music-btn:nth-child(2n) {
+  margin-left: 50%;
+  /* 배치 */
+}
